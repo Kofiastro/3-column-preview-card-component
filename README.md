@@ -20,8 +20,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 
 ### Links
 
-- Solution URL: [(https://github.com/Kofiastro/Chat-app-CSS-illustration)]
-- Live Site URL:[(https://spiffy-peony-412440.netlify.app/)]
+- Solution URL: [(https://github.com/Kofiastro/Product-preview-card-component)]
+- Live Site URL:[(https://lighthearted-bombolone-4d3ac5.netlify.app/)]
 
 ## My process
 Using Tailwindcss i have been able to work on designs much faster and i want to learn more by working on more projects at frontendmentor to help me be good at it.
