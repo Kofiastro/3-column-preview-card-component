@@ -1,71 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <!--Google fonts-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
+    rel="stylesheet">
   <!--CSS-->
-<link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | 3-column preview card component</title>
 </head>
+
 <body>
   <!--Main Container-->
-  <section>
-    <main>
-      <div class="flex justify-center  items-center h-screen">
-        <!--Box_Container-->
-        <div class="bg-white  py-96">
-          <div class="flex flex-col md:flex-row ">
-            <!--orange container-->
-              <div class="bg-Brightorange p-8  rounded-top-lg space-y-4 md:h-auto md:w-64  md:rounded-l-lg ">
-                <img src="./images/icon-sedans.svg" alt="luxurycar" class="">
-                <h1 class="text-left text-3xl text-white font-Bigshoulders font-bold tracking-wider capitalize">
-                  SEDANS
-                </h1>
-                <p class="text-left text-sm font-Lexend text-Transparentwhite max-w-xs tracking-wide py-10">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
-                <button class="p-3 font-Lexend text-Brightorange capitalize flex items-center bg-white rounded-full px-8">
-                  learn more 
-                </button>
-              </div>
-              <!--Darkcyan-->
-              <div class="  bg-Darkcyan p-8  space-y-4 md:h-auto md:w-64 ">
-                <img src="./images/icon-suvs.svg" alt="luxurycar" class="">
-                <h1 class="text-left text-3xl text-white font-Bigshoulders font-bold tracking-wider capitalize">
-                  SUVS
-                </h1>
-                <p class="text-left text-sm font-Lexend text-Transparentwhite max-w-xs tracking-wide py-10">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures..</p>
-                <button class="p-3 font-Lexend text-Darkcyan capitalize flex items-center bg-white rounded-full px-8">
-                  learn more 
-                </button>
-              </div>
-              <!--Very Darkcyan ccontainer-->
-              <div class="  bg-Verydarkcyan  p-8  rounded-b-lg   space-y-4 md:h-auto md:w-64 md:rounded-bl-none md:rounded-r-lg  ">
-                <img src="./images/icon-luxury.svg" alt="luxurycar" class="">
-                <h1 class="text-left text-3xl text-white font-Bigshoulders font-bold tracking-wider capitalize">
-                  LUXURY
-                </h1>
-                <p class="text-left text-sm  font-Lexend text-Transparentwhite max-w-xs tracking-wide py-9">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. </p>
-                <button class="p-3 font-Lexend text-Verydarkcyan capitalize flex items-center bg-white rounded-full px-8">
-                  learn more 
-                </button>
-              </div>
+  <main>
+    <div class="flex justify-center items-center h-screen">
+      <!--Grid_Container-->
+        <div class="grid md:grid-cols-3 mt-12 md:m-0 ">
+          <!--Orange Container-->
+          <div class="bg-Brightorange p-8  rounded-t-lg max-w-xs md:w-64 md:rounded-l-lg md:rounded-tr-none ">
+            <div class="space-y-6 md:space-y-10 md:px-6">
+              <img src="./images/icon-sedans.svg" alt="" class="">
+              <h1 class="text-3xl text-white  font-Bigshoulders">
+                SEDANS
+              </h1>
+              <p class="text-xs font-Lexend text-Transparentwhite max-w-xs">
+                Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your
+                next road trip.
+              </p>
+              <button class="px-3 p-2 bg-white text-xs text-center text-Brightorange rounded-full transition hover:text-white hover:bg-Brightorange hover:outline hover:outline-offset-2 hover:outline-white">
+                Learn More
+              </button>
+            </div>
+           
+          </div>
+          <!--Darkycan Container-->
+          <div class="bg-Darkcyan p-8 max-w-xs md:w-64">
+            
+            <div class="space-y-6 md:space-y-10 md:px-6">
+              <img src="./images/icon-suvs.svg" alt="">
+              <h1 class="text-3xl text-white  font-Bigshoulders">
+                SUVS
+              </h1>
+              <p class="text-xs font-Lexend text-Transparentwhite max-w-xs">
+                Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.
+              </p>
+              <button class="px-3 p-2 bg-white text-xs text-center  text-Darkcyan rounded-full transition hover:text-white hover:bg-Darkcyan hover:outline hover:outline-offset-2 hover:outline-white"">
+                Learn More
+              </button>
+            </div>
+            
+          </div>
+          <!--VeryDarkcyan Container-->
+          <div class="bg-Verydarkcyan  p-8 rounded-b-lg max-w-xs md:w-64 md:rounded-r-lg md:rounded-bl-none">
+            <div class="space-y-6 md:space-y-10 md:px-6">
+              <img src="./images/icon-luxury.svg" alt="">
+              <h1 class="text-3xl text-white  font-Bigshoulders">
+                LUXURY
+              </h1>
+              <p class="text-xs font-Lexend text-Transparentwhite max-w-xs">
+                Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury rental and arrive in style. 
+              </p>
+              <button class="px-3 p-2 bg-white text-xs text-center text-Verydarkcyan rounded-full transition hover:text-white hover:bg-Verydarkcyan hover:outline hover:outline-offset-2 hover:outline-white">
+                Learn More
+              </button>
+            </div>
+            
+          </div>
         </div>
+          
         </div>
-        </div>
-    </main>
-  </section>
-  <section>
-    <footer class="bg-cream mt-96 pt-20 text-xs text-center">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend
-        Mentor</a>.
-      Coded by <a href="https://github.com/Kofiastro/" class="text-blue-500" target="_blank">Kofi Danso Amakye </a>.
-    </footer>
-  </section>
-  
+      </div>
+  </main>
+  <footer class="bg-cream mt-16 text-xs text-center md:m-0">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" class="text-blue-500" target="_blank">Frontend
+      Mentor</a>.
+    Coded by <a href="https://github.com/Kofiastro/" class="text-blue-500" target="_blank">Kofi Danso Amakye </a>.
+
+
 </body>
+
 </html>
